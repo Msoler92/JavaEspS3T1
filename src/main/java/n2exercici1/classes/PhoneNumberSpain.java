@@ -16,7 +16,7 @@ public class PhoneNumberSpain implements PhoneNumber {
     }
     @Override
     public String getPhoneNumber() {
-        return INTERNATIONAL+body;
+        return INTERNATIONAL + " " + body;
     }
 
 }

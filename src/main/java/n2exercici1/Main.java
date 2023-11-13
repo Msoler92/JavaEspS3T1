@@ -15,14 +15,20 @@ public class Main {
         Address address;
         PhoneNumber phone;
 
-        //Simple demo phonebook
-        ArrayList<Object> phonebook = new ArrayList<>();
+        //Simple demo phonebook without dedicated class
+        ArrayList<PhoneNumber> phones = new ArrayList<>();
+        ArrayList<Address> addresses = new ArrayList<>();
 
         address = addressFactory.getAddress("Spain");
         address.setAddress("Calle Lasuya", "1", "08032", "Barcelona");
-        phonebook.add(address);
+        addresses.add(address);
 
         phone = phoneFactory.getPhoneNumber("United Kingdom");
+        phone.setPhoneNumber("3333-4444");
+        phones.add(phone);
+
+        System.out.println(addresses.get(0).getAddress());
+        System.out.println(phones.get(0).getPhoneNumber());
 
     }
 
