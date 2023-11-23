@@ -3,11 +3,11 @@ package n2exercici1.classes;
 import n2exercici1.interfaces.Address;
 
 public class AddressUK implements Address {
-    final String COUNTRY;
-    String street;
-    String num;
-    String postCode;
-    String city;
+    private final String COUNTRY;
+    private String street;
+    private String num;
+    private String postCode;
+    private String city;
 
     public AddressUK() {
         COUNTRY = "United Kingdom";
